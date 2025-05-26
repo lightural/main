@@ -34,15 +34,14 @@
         .hero-bg {
     background-image: url('h.png');
     background-size: cover;
-    background-position: center;
-    min-height: 60vh; /* 預設為視窗高度的60%，適合手機 */
-    /* original: min-height: 100vh; */ /* 圖片中原本設定的 */
+    background-position: top center; /* 讓圖片的上方部分居中顯示 */
+    min-height: 60vh; /* 視窗高度的60% */
 }
 
-/* 當螢幕寬度大於或等於 768px (md 斷點) 時，應用更大的 min-height */
 @media (min-width: 768px) {
     .hero-bg {
-        min-height: 100vh; /* 桌面版保持原有的高度 */
+        min-height: 100vh;
+        background-position: center; /* 桌面版仍然居中 */
     }
 }
         .about-us-img {
